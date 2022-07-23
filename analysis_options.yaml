@@ -1,0 +1,9 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    prefer_const_literals_to_create_immutables: false
+    prefer_typing_uninitialized_variables: false
+    prefer_const_constructors: false
+    non_constant_identifier_names: false
+    file_names: false
