@@ -5,6 +5,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+import 'Provider/Movie.dart';
 import 'Provider/home.dart';
 import 'screen/home.dart';
 
@@ -20,8 +21,8 @@ void main() async {
   ]);
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
-      statusBarColor: Color(0xff060F2F),
-      systemNavigationBarColor: Color(0xff060F2F),
+      statusBarColor: Colors.transparent,
+      systemNavigationBarColor: Colors.black,
       statusBarIconBrightness: Brightness.light,
     ),
   );
@@ -29,6 +30,7 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => HomeApi(api)),
+        ChangeNotifierProvider(create: (_) => MovieApi(api)),
       ],
       child: NotificationListener<OverscrollIndicatorNotification>(
         onNotification: (overscroll) {
@@ -43,7 +45,7 @@ void main() async {
             fontFamily: "Rabar",
             backgroundColor: Color(0xff1B2240),
             primaryColor: Color(0xff4BC9F0),
-            scaffoldBackgroundColor: Color(0xff060F2F),
+            scaffoldBackgroundColor: Colors.black,
             hintColor: Colors.white60,
             focusColor: Colors.white,
             iconTheme: IconThemeData(color: Colors.white),

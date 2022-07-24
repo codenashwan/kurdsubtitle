@@ -45,7 +45,7 @@ class Photo extends StatelessWidget {
                     ))
               : CachedNetworkImage(
                   width: width,
-                  height: width,
+                  height: height,
                   imageUrl: url,
                   useOldImageOnUrlChange: true,
                   fadeInCurve: Curves.easeIn,

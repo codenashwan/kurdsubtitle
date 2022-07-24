@@ -53,11 +53,11 @@ class _HomeState extends State<Home> {
                         );
                       }).toList(),
                     ),
+                    SizedBox(height: 10),
                     Lead(
                       title: 'نوێترین فلیمەکان',
                       icon: FeatherIcons.film,
                     ),
-                    SizedBox(height: 10),
                     SizedBox(
                       height: 300,
                       child: ListView.builder(
@@ -70,6 +70,7 @@ class _HomeState extends State<Home> {
                         },
                       ),
                     ),
+                    SizedBox(height: 10),
                     Lead(
                       title: 'هەڵسەنگاندنەکان',
                       icon: Icons.star,
@@ -87,11 +88,11 @@ class _HomeState extends State<Home> {
                         },
                       ),
                     ),
+                    SizedBox(height: 10),
                     Lead(
                       title: 'نوێترین زنجیرەکان',
                       icon: FeatherIcons.tv,
                     ),
-                    SizedBox(height: 10),
                     SizedBox(
                       height: 300,
                       child: ListView.builder(
